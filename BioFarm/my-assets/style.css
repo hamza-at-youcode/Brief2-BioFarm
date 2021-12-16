@@ -1,0 +1,71 @@
+
+.site-logo{
+    height: 43px;
+}
+
+.site-logo img{
+    height: 43px;
+}
+
+.hero-bg{
+    background-image: url('./img/wachingfruits.png');
+}
+
+/* Gallery page */
+
+.single-product-item.image-item {
+    height: 474px;
+    position: relative;
+    overflow: hidden;
+}
+
+.single-product-item.image-item img{
+    height: 474px;
+    transition: transform 1s ease;
+}
+
+.single-product-item.image-item:hover img{
+    transform: scale(1.3);
+}
+
+.single-product-item.image-item::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    background-color: rgba(5, 25, 34,.5);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.single-product-item.image-item:hover::after,
+.single-product-item.image-item:hover .product-desc{
+    opacity: 1;
+}
+
+.product-desc{
+    position: absolute;
+    bottom: 39px;
+    width:  100%;
+    z-index: 2;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.product-desc p{
+    font-size: 25px;
+    margin-bottom: 41px;
+    color: #ffffff;
+    padding: 0 10px;
+}
+
+.load-more{
+    margin-top: 126px;
+}
+
+.load-more .boxed-btn{
+    margin: auto;
+}
+
